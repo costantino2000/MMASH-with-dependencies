@@ -1,4 +1,4 @@
-def create_dataset(users,file_name,replace_na=True):
+def create_dataset(path,users,file_name,replace_na=True):
     
     """
     Returns MMASH datafarame.
@@ -18,7 +18,7 @@ def create_dataset(users,file_name,replace_na=True):
     df_concat = pandas.DataFrame()
     for user in users:
         try:
-            df = pandas.read_csv('MMASH/DataPaper/%s/%s.csv'%(user,file_name))
+            df = pandas.read_csv(path + '%s/%s.csv' %(user,file_name))
             df['user'] = user
             df_concat = pandas.concat([df_concat,df])
         except:
