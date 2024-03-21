@@ -1,4 +1,16 @@
-## MMASH: Multilevel Monitoring of Activity and Sleep in Healthy people - Data reading and analysis
+## MMASH: Multilevel Monitoring of Activity and Sleep in Healthy people - Data reading and analysis - fork with dependencies and guide
+
+Tested on Windows 11 23H2. Instructions for the requirements:
+
+- Download and install [Python 3.8.10](https://www.python.org/downloads/release/python-3810/);
+- Create a virtual environment with [```venv```](https://docs.python.org/3/library/venv.html) and activate it;
+- From the terminal and with the virtual environment active install the requirements with ```pip install -r requirements.txt```;
+- Download the dataset from [here](https://physionet.org/files/mmash/1.0.0/MMASH.zip?download) and extract the ```DataPaper``` folder inside the root of the repository.
+
+You can now run the notebook on Jupyter after selecting the created virtual environment for the kernel.
+
+
+## Original README
 
 #### Rossi, A.<sup>1</sup>, Da Pozzo, E.<sup>2</sup>, Menicagli, D.<sup>3</sup>, Tremolanti, C.<sup>2</sup>, Priami, C.<sup>1,4</sup>, Sirbu, A.<sup>1</sup>, Clifton, D.<sup>5</sup>, Martini, C.<sup>2</sup>, & Morelli, D.<sup>5,6</sup>
 
