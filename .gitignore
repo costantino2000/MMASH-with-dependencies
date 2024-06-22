@@ -1,2 +1,17 @@
-/DataPaper
-/function_code/__pycache__
+# Dataset folder
+Workspace/DataPaper
+
+# Script outputs folder
+Workspace/Outputs
+
+# Train sets folder
+Workspace/Datasets
+
+# Results folder
+Workspace/Results
+
+# Python cache
+**/__pycache__
+
+# Name of the virtual environment
+.venv

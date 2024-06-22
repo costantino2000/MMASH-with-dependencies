@@ -1,13 +1,24 @@
-## MMASH: Multilevel Monitoring of Activity and Sleep in Healthy people - Data reading and analysis - fork with dependencies and guide
+## MMASH: Multilevel Monitoring of Activity and Sleep in Healthy people - Data reading and analysis - fork with scripts to preprocess and test the data
 
-Tested on Windows 11 23H2. Instructions for the requirements:
+Tested on Windows 11 23H2 with VSCode. Instructions for the requirements:
 
 - Download and install [Python 3.8.10](https://www.python.org/downloads/release/python-3810/);
-- Create a virtual environment with [```venv```](https://docs.python.org/3/library/venv.html) and activate it;
+- Create a virtual environment with [```venv```](https://docs.python.org/3/library/venv.html) and activate it (change the name in the gitignore if you don't call it venv);
 - From the terminal and with the virtual environment active install the requirements with ```pip install -r requirements.txt```;
-- Download the dataset from [here](https://physionet.org/files/mmash/1.0.0/MMASH.zip?download) and extract the ```DataPaper``` folder inside the root of the repository.
+- Download the dataset from [here](https://physionet.org/files/mmash/1.0.0/MMASH.zip?download) and extract the ```DataPaper``` folder inside the Workspace folder.
 
-You can now run the notebook on Jupyter after selecting the created virtual environment for the kernel.
+You can now run the notebook ```Code_MMASH.ipynb``` on Jupyter after selecting the created virtual environment for the kernel.
+
+
+### Preprocessing and model training
+
+This fork adds three main scripts (made by me and [@CongiuPietroMassimo](https://github.com/CongiuPietroMassimo), the script ```extract_sleep_features``` was made by [@eleonoraPorcu](https://github.com/Mowgly27) and adapted to work with the rest):
+
+- ```1_Preprocess_all``` to create the files ending in ```-processed``` in the datasets folders;
+- ```2_Create_datasets``` to create the train sets in the ```Dataset``` folder;
+- ```3_Test_models``` to run various tests and get results (the metrics for the feature selection need to be changed in ```models_testing```).
+
+Every other script in the Workspace folder is called by them, after extracting the ```DataPaper``` folder you can just run the main scripts sequentially and get the outputs.
 
 
 ## Original README
@@ -31,16 +42,4 @@ The Python Notebook provided in this repository is useful to read and analyze MM
 
 **Dataset:** Rossi, A., Da Pozzo, E., Menicagli, D., Tremolanti, C., Priami, C., Sirbu, A., Clifton, D., Martini, C., & Morelli, D. (2020). Multilevel Monitoring of Activity and Sleep in Healthy People (version 1.0.0). PhysioNet. https://doi.org/10.13026/cerq-fc86.
 
-**DataPaper link:** the link will be available soon (MDPI Data accepted)
-
----
-
-<p align="center">
-  <img align="center" src=img_biobeats.png>
-</p>
-
-<p align="center">
-  <img align="center" src=https://github.com/RossiAlessio/MMASH/blob/master/huma%20_logo.png>
-</p>
-
-
+**DataPaper link:** https://physionet.org/content/mmash/1.0.0/
