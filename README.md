@@ -12,7 +12,7 @@ You can now run the notebook ```Code_MMASH.ipynb``` on Jupyter after selecting t
 
 ### Preprocessing and model training
 
-This fork adds three main scripts (made by me and [@CongiuPietroMassimo](https://github.com/CongiuPietroMassimo), the script ```extract_sleep_features``` was made by [@eleonoraPorcu](https://github.com/Mowgly27) and adapted to work with the rest):
+This fork adds three main scripts (made by me and [@CongiuPietroMassimo](https://github.com/CongiuPietroMassimo), the script ```extract_sleep_features``` was made by [@eleonoraPorcu](https://github.com/Mowgly27) and [@silviam-massa](https://github.com/silviam-massa) and adapted to work with the rest):
 
 - ```1_Preprocess_all``` to create the files ending in ```-processed``` in the datasets folders;
 - ```2_Create_datasets``` to create the train sets in the ```Dataset``` folder;
